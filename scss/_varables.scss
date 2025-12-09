@@ -1,0 +1,31 @@
+@mixin breakpoint($point) {
+  @if $point == xl {
+    @media (max-width: 969px) {
+      @content;
+    }
+  } @else if $point == lg {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $point == xs {
+    @media (max-width: 360px) {
+      @content;
+    }
+  } @else if $point == minlg {
+    @media (min-width: 400px) {
+      @content;
+    }
+  }
+}
+
+/*------------------------------------*/ /* Fonts */ /*------------------------------------*/
+
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: normal;
+    font-display: swap;
+  }
+}
