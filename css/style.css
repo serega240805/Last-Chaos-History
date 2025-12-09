@@ -134,6 +134,8 @@ body {
   line-height: 162%;
   text-align: center;
   background: var(--BG-color);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .wrapper {
@@ -414,5 +416,6 @@ body {
   border-radius: 12px;
   margin-top: 20px;
   z-index: 2;
-  margin-top: 280px;
+  margin-top: 200px;
+  margin-bottom: 120px;
 }/*# sourceMappingURL=style.css.map */
